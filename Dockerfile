@@ -2,7 +2,6 @@ FROM python:3.13.5-slim
 
 # Copy uv and maim_message
 COPY --from=ghcr.io/astral-sh/uv:latest /uv /uvx /bin/
-COPY maim_message /maim_message
 COPY requirements.txt /requirements.txt
 
 # Install requirements
